@@ -171,7 +171,8 @@ main { position: relative; }
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1.6fr 0.4fr;
+  grid-template-columns: 1fr;
+  max-width: 800px;
   gap: 48px;
   align-items: center;
   padding-top: 88px;
@@ -271,24 +272,6 @@ main { position: relative; }
 .btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); transform: translateY(-2px); }
 
 .btn-small { padding: 10px 22px; font-size: 0.88rem; }
-
-/* Hero photo — glass gradient-border frame */
-.hero-photo {
-  max-width: 240px;
-  margin-inline: auto;
-  padding: 4px;
-  border-radius: 50%;
-  background: var(--gradient);
-  box-shadow: 0 25px 60px rgba(37,99,235,0.25);
-}
-
-.hero-photo-img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-  border-radius: 50%;
-}
 
 /* ============================================
    SPECIALTIES — glass cards, slight offset
@@ -523,7 +506,6 @@ main { position: relative; }
    ============================================ */
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; text-align: left; padding-top: 56px; padding-bottom: 56px; }
-  .hero-photo { order: -1; max-width: 190px; margin: 0 auto 20px; }
   .specialty-grid, .specialty-grid-4 { grid-template-columns: 1fr; gap: 28px; }
   .specialty-card:nth-child(2n) { transform: translateY(0); }
   .specialty-card:nth-child(2n):hover { transform: translateY(-6px); }
