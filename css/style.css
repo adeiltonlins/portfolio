@@ -274,20 +274,20 @@ main { position: relative; }
 
 /* Hero photo — glass gradient-border frame */
 .hero-photo {
-  max-width: 260px;
+  max-width: 240px;
   margin-inline: auto;
-  padding: 3px;
-  border-radius: 22px;
+  padding: 4px;
+  border-radius: 50%;
   background: var(--gradient);
   box-shadow: 0 25px 60px rgba(37,99,235,0.25);
 }
 
 .hero-photo-img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
-  border-radius: 19px;
+  border-radius: 50%;
 }
 
 /* ============================================
